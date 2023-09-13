@@ -37,3 +37,7 @@ td.dedo {
 td.dodo {
     background-color: blue;
 }
+
+.num {
+    text-align: right;
+}
