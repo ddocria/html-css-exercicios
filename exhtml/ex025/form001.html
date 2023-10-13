@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: black url(img/pexels-sohail-nachiti-807598.jpg) no-repeat ;
+            background-size: cover;
+        }
+        
+        h1 {
+            color: darkgreen;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+            font-size: 4em;
+            padding: 20px;
+        }
+
+        p {
+            color: darkgreen;
+            font-size: 1em;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+            padding: 10px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            background-color: rgba(0, 0, 0, 0.582);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Meu primeiro formulário </h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="Inome">Nome:</label> 
+            <input type="text" name="Nome" id="Inome">
+        </p>
+        <p><label for="Isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="Isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
