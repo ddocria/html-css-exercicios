@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Explorando a Profundidade da Mitologia Nórdica</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    </header>
+    <menu id="itens">
+        <ul>
+            <li><a href="index.html">Deuses e Deusas</a></li>
+            <li><a href="index2.html">Criaturas Míticas</a></li>
+            <li><a href="index3.html">Galeria de Arte Nórdica</a></li>
+        </ul>
+    </menu>
+    <main>
+        <article>
+            <h2>Galeria de Arte Nórdica</h2>
+            <p>A arte nórdica, especialmente aquela associada à cultura viking e à mitologia nórdica, é rica em simbolismo e expressividade. Ela abrange uma variedade de formas artísticas, incluindo escultura, joalheria, cerâmica, tapeçaria e pintura. Aqui estão algumas características distintivas da arte nórdica:</p>
+
+            <h3>Entalhes em Madeira e Pedra</h3>
+             <p>Os povos nórdicos eram hábeis entalhadores em madeira e pedra. Suas esculturas muitas vezes retratavam figuras mitológicas, como deuses, deusas e criaturas míticas. As estelas (pedras eretas) gravadas com imagens e inscrições também eram comuns.</p>
+
+            <h3>Joalheria</h3>
+             <p>Os artesãos nórdicos eram conhecidos por suas habilidades em trabalhar metais preciosos, como ouro e prata. Amuletos, anéis, braceletes e broches frequentemente apresentavam detalhes intricados e motivos inspirados na mitologia nórdica, como martelos de Thor, dragões e nós celtas.</p>
+
+            <h3>Pintura</h3>
+             <p>A pintura nórdica antiga era predominantemente encontrada em objetos como escudos e embarcações. Cores vivas, como o vermelho e o amarelo, eram comuns. A arte muitas vezes retratava cenas de batalhas, figuras mitológicas e elementos da natureza.</p>
+
+            <h3>Arte Têxtil</h3>
+             <p>A tapeçaria e o bordado eram formas de arte importantes na cultura nórdica. Tecidos decorativos muitas vezes apresentavam padrões intricados e representações de deuses e deusas.</p>
+
+            <h3>Arquitetura e Arte Religiosa</h3>
+             <p>Templos nórdicos eram adornados com esculturas e entalhes, muitas vezes representando divindades adoradas. O famoso navio de Oseberg, por exemplo, contém esculturas detalhadas que refletem a mitologia nórdica.</p>
+
+            <h3>Runas</h3>
+             <p>As runas, caracteres alfabéticos utilizados pelos povos germânicos, eram frequentemente inscritas em objetos e monumentos. As runas não eram apenas um sistema de escrita, mas também tinham significados simbólicos e místicos.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+            itens.style.display = 'block'
+        }   }
+    </script>
+</body>
+</html>

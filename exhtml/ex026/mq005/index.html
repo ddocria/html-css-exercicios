@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Explorando a Profundidade da Mitologia Nórdica</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    </header>
+    <menu id="itens">
+        <ul>
+            <li><a href="index.html">Deuses e Deusas</a></li>
+            <li><a href="index2.html">Criaturas Míticas</a></li>
+            <li><a href="#">Galeria de Arte Nórdica</a></li>
+        </ul>
+    </menu>
+    <main>
+        <article>
+            <h2>Deuses e Deusas</h2>
+            <p>
+                A mitologia nórdica é uma rica tradição mitológica que se desenvolveu entre os povos germânicos do norte da Europa, incluindo os antigos escandinavos. Ela é composta por uma variedade de deuses, deusas, criaturas míticas e eventos cósmicos que formam o panteão nórdico. Aqui estão alguns dos deuses e deusas mais proeminentes:
+            </p>
+
+            <h3>Odin</h3>
+             <p>O deus supremo e pai de todos. Odin é associado à sabedoria, magia, poesia e guerra. Ele governa o reino celestial de Asgard, onde fica o majestoso salão Valhalla, para onde vão os guerreiros heroicos mortos em batalha.</p>
+
+            <h3>Thor</h3>
+             <p>O deus do trovão, filho de Odin. Thor é conhecido por sua força física, coragem e pelo martelo Mjölnir, que é capaz de controlar tempestades e retornar à mão de seu portador após ser lançado.</p>
+
+            <h3>Frigg</h3>
+             <p>A esposa de Odin e rainha de Asgard. Frigg é associada à maternidade, ao amor e à fertilidade. Ela é mãe de Balder, o deus da luz e da beleza.</p>
+
+            <h3>Loki</h3>
+             <p>Um ser complexo e astuto, Loki é tanto um deus quanto um trickster (trapaceiro). Ele é filho de dois gigantes e é conhecido por suas travessuras, muitas vezes colocando os deuses em situações difíceis. Apesar disso, Loki também desempenha papéis importantes em vários mitos.</p>
+
+            <h3>Balder</h3>
+             <p>O deus da luz e da pureza. Balder é conhecido por sua beleza e bondade. Sua morte é um dos eventos mais trágicos da mitologia nórdica, marcando o início do Ragnarök, o fim do mundo.</p>
+
+            <h3>Freya</h3>
+             <p>Uma deusa da fertilidade, do amor e da beleza. Freya é uma das deusas mais importantes do panteão nórdico e tem uma conexão especial com a magia e a adivinhação.</p>
+
+            <h3>Tyr</h3>
+             <p>O deus da guerra e do combate honrado. Ele é muitas vezes retratado como destemido e corajoso, sacrificando sua mão para prender o lobo Fenrir, uma das criaturas temíveis do mito nórdico.</p>
+
+            <h3>Heimdall</h3>
+             <p>O guardião dos deuses, responsável por vigiar o Bifröst, a ponte arco-íris que liga Asgard aos reinos dos mortais. Heimdall também é associado à visão aguçada e à audição apurada.</p>
+
+            <h3>Freyr</h3>
+             <p>O deus da fertilidade, da prosperidade e do tempo bom. Freyr é frequentemente representado com uma espada mágica e associado à colheita.</p>
+
+
+
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+            itens.style.display = 'block'
+        }   }
+    </script>
+</body>
+</html>

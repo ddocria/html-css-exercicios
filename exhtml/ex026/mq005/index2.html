@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Explorando a Profundidade da Mitologia Nórdica</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    </header>
+    <menu id="itens">
+        <ul>
+            <li><a href="index.html">Deuses e Deusas</a></li>
+            <li><a href="index2.html">Criaturas Míticas</a></li>
+            <li><a href="index3.html">Galeria de Arte Nórdica</a></li>
+        </ul>
+    </menu>
+    <main>
+        <article>
+            <h2>Criaturas Míticas</h2>
+            <p>A Mitologia Nórdica é repleta de criaturas fascinantes e misteriosas que habitam os nove reinos interconectados. Essas criaturas desempenham papéis significativos nas histórias e mitos que compõem a rica tapeçaria do universo nórdico. Vamos explorar algumas das mais notáveis:
+            
+            <h3>Fenrir: O Lobo Monstruoso</h3>
+
+            <p>Fenrir é um lobo gigantesco, filho do deus Loki, destinado a desempenhar um papel crucial no evento apocalíptico conhecido como Ragnarök. Sua figura imponente e poderosa representa a força indomável que desafia até mesmo os deuses.</p>
+            
+            <h3>Jormungandr: A Serpente do Mundo</h3>
+
+            <p>Conhecida como a Serpente Midgard, Jormungandr é uma criatura colossal que circunda o mundo, mordendo sua própria cauda. Profetizado para enfrentar Thor durante o Ragnarök, sua presença simboliza a inevitabilidade do ciclo de destruição e renascimento.</p>
+
+            <h3>Águias e Falcões Mensageiros:</h3>
+
+            <p>
+                Na Mitologia Nórdica, diversas aves desempenham papéis importantes. Destacam-se Huginn e Muninn, os corvos de Odin, que viajam pelos nove reinos trazendo notícias e informações. Além disso, o falcão de Freyja é associado à deusa do amor e da fertilidade.
+            </p>
+
+            <h3>Dwarves: Os Artífices Hábeis</h3>
+            <p>
+                Os anões, ou dwarves, são seres subterrâneos conhecidos por sua habilidade excepcional na forja. Eles foram responsáveis por criar alguns dos artefatos mais poderosos, como o martelo de Thor (Mjölnir) e o anel Draupnir.
+                
+            </p>
+            <h3>Elfos: Seres Luminosos e Sombrios</h3>
+            <p>Os elfos na Mitologia Nórdica são seres divinos e mágicos, muitas vezes associados à luz e à escuridão. Alguns elfos são benevolentes, enquanto outros são malévolos. O Álfar Ljósálfar é associado à luz, enquanto o Álfar Dökkálfar é relacionado à escuridão.
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+            itens.style.display = 'block'
+        }   }
+    </script>
+</body>
+</html>
